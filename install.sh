@@ -29,7 +29,9 @@ sudo apt update
 sudo apt install -y snapd albert flameshot terminator
 sudo snap install --classic code slack
 sudo snap install --classic slack
-sudo snap install mailspring spotify
+sudo snap install mailspring spotify git yarn 
+
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -39,4 +41,14 @@ sudo apt-get -f install
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
+echo '=> Done'
+
+echo '=> Copy .zshrc file'
+cp .zshrc ~/
+echo '=> Done'
+
+echo '=> Copy .gitconfig file'
+cp .gitconfig ~/
+echo '=> Done'
+
 echo '=> Final done.'
