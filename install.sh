@@ -26,7 +26,7 @@ echo 'Done.'
 #Add Packages
 echo '=> Add apps'
 sudo apt update
-sudo apt install -y   snapd albert flameshot terminator
+sudo apt install -y snapd albert flameshot terminator
 sudo snap install --classic code slack
 sudo snap install --classic slack
 sudo snap install mailspring spotify
